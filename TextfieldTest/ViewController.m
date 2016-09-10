@@ -25,6 +25,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    036126165
+    NSLog(@"这是develop分支里的方法");
+    NSLog(@"098");
 //   这是develop的改动
     [self.view addSubview:self.textField];
     ///
