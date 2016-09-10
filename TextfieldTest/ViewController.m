@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    036126165 23
-    NSLog(@"098这是改动453543uioui[拍\破口吧你.");
+    NSLog(@"098这是改动453543uioui破口吧你.");
     [self.view addSubview:self.textField];
     
     self.navigationController.navigationBar.barTintColor = [UIColor cyanColor];
