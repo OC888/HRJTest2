@@ -19,14 +19,8 @@
 
 @implementation ViewController
 
-- (UITextField *)textField {
-    if (!_textField) {
-        _textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 100, [UIScreen mainScreen].bounds.size.width - 40, 30)];
-        _textField.placeholder = @"输入你想说的话...";
-        [_textField addTarget:self action:@selector(textFieldEditChanged:) forControlEvents:UIControlEventEditingChanged];
-        _textField.delegate = self;
-    }
-    return _textField;
+- (void )textsField {
+    NSLog(@"2435678");
 }
 
 - (void)viewDidLoad {
