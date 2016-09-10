@@ -27,7 +27,7 @@
     [super viewDidLoad];
 //   这是develop的改动
     [self.view addSubview:self.textField];
-    
+    ///
     self.navigationController.navigationBar.barTintColor = [UIColor cyanColor];
     
 }
