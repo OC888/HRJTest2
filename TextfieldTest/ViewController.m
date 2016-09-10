@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSLog(@"098");
     [self.view addSubview:self.textField];
     
     self.navigationController.navigationBar.barTintColor = [UIColor cyanColor];
