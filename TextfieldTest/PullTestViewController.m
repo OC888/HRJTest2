@@ -18,6 +18,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
 //    pullTest2里加注释了么
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(50, 50, 50, 50)];
+    
+    [self.view addSubview:label];
     
     
     // Do any additional setup after loading the view.
