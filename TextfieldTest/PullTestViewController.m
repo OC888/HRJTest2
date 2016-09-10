@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
+//    pullTest2里加注释了么
+    
+    
     // Do any additional setup after loading the view.
 }
 
