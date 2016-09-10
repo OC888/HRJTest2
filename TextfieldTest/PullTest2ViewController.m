@@ -18,6 +18,8 @@
     [super viewDidLoad];
 //    加个注释
     self.view.backgroundColor = [UIColor greenColor];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(50, 50, 50, 50)];
+    [self.view addSubview:label];
     // Do any additional setup after loading the view.
 }
 
