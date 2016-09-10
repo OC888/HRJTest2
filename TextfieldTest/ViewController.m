@@ -7,16 +7,69 @@
 //
 
 #import "ViewController.h"
+#import "AFNetworking.h"
 
-@interface ViewController ()
+
+@interface ViewController ()<UITextFieldDelegate>
+
+@property (strong, nonatomic) UITextField *textField;
+@property (nonatomic, copy) NSString *string;
 
 @end
 
 @implementation ViewController
 
+- (UITextField *)textField {
+    if (!_textField) {
+        _textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 100, [UIScreen mainScreen].bounds.size.width - 40, 30)];
+        _textField.placeholder = @"输入你想说的话...";
+        [_textField addTarget:self action:@selector(textFieldEditChanged:) forControlEvents:UIControlEventEditingChanged];
+        _textField.delegate = self;
+    }
+    return _textField;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view addSubview:self.textField];
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor cyanColor];
+    
+}
+/**
+ * textField的实现方法
+ *
+ * textFieldEditChanged:
+ **/
+- (void)textFieldEditChanged:(UITextField *)textField {
+    
+    self.string = textField.text;
+    NSLog(@"text == %@", self.string);
+}
+
+- (void)uploadAciton:(UIButton *)button {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    NSDictionary *parameters = @{@"string":self.string, @"uesrName":@"m6.jpg"};
+    
+    [manager POST:@"" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        UIImage *image = [UIImage imageNamed:@"m6.jpg"];
+        NSData *data = UIImageJPEGRepresentation(image, 0.1);
+        [formData appendPartWithFileData:data name:@"file" fileName:@"m6.jpg" mimeType:@"application/octet-stream"];
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"上传成功");
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"上传失败");
+    }];
+}
+
+//收回键盘
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {
