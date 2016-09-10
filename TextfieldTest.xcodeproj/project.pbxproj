@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		009C02911D83C49100C25FF4 /* PullTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009C02901D83C49100C25FF4 /* PullTestViewController.m */; };
 		E993F2B31D5EBECD00415F78 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E993F2A71D5EBECD00415F78 /* AFHTTPSessionManager.m */; };
 		E993F2B41D5EBECD00415F78 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E993F2AA1D5EBECD00415F78 /* AFNetworkReachabilityManager.m */; };
 		E993F2B51D5EBECD00415F78 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = E993F2AC1D5EBECD00415F78 /* AFSecurityPolicy.m */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		009C028F1D83C49100C25FF4 /* PullTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullTestViewController.h; sourceTree = "<group>"; };
+		009C02901D83C49100C25FF4 /* PullTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullTestViewController.m; sourceTree = "<group>"; };
 		E993F2A61D5EBECD00415F78 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		E993F2A71D5EBECD00415F78 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		E993F2A81D5EBECD00415F78 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				E9EB5A371D5DBF4D00A9D393 /* AppDelegate.m */,
 				E9EB5A391D5DBF4D00A9D393 /* ViewController.h */,
 				E9EB5A3A1D5DBF4D00A9D393 /* ViewController.m */,
+				009C028F1D83C49100C25FF4 /* PullTestViewController.h */,
+				009C02901D83C49100C25FF4 /* PullTestViewController.m */,
 				E993F2B91D5ECF7000415F78 /* m6.jpg */,
 				E9EB5A3C1D5DBF4D00A9D393 /* Main.storyboard */,
 				E9EB5A411D5DBF4D00A9D393 /* LaunchScreen.storyboard */,
@@ -203,6 +208,7 @@
 				E993F2B61D5EBECD00415F78 /* AFURLRequestSerialization.m in Sources */,
 				E993F2B71D5EBECD00415F78 /* AFURLResponseSerialization.m in Sources */,
 				E993F2B31D5EBECD00415F78 /* AFHTTPSessionManager.m in Sources */,
+				009C02911D83C49100C25FF4 /* PullTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
