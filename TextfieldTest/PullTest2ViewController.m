@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    加个注释
     self.view.backgroundColor = [UIColor greenColor];
     // Do any additional setup after loading the view.
 }
