@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"第一次改动");
     self.view.backgroundColor = [UIColor grayColor];
 //    pullTest2里加注释了么
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(50, 50, 50, 50)];
