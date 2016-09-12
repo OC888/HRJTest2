@@ -21,6 +21,7 @@
     self.view.backgroundColor = [UIColor greenColor];
     UILabel *label1 = [[UILabel alloc]initWithFrame:CGRectMake(50, 50, 50, 50)];
     label1.backgroundColor = [UIColor yellowColor];
+    label1 .text = @"zhaoyi ";
     [self.view addSubview:label1];
     // Do any additional setup after loading the view.
 }
