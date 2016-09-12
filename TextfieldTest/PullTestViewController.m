@@ -21,6 +21,7 @@
 //    pullTest2里加注释了么
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(50, 50, 50, 50)];
     label.backgroundColor = [UIColor greenColor];
+    label.text = @"github";
     [self.view addSubview:label];
     
     
